@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Guitar Chords Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="images/PhotoRoom-20231020_232757.png">
+        <script src="https://kit.fontawesome.com/cec115b967.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+        <div id="header">
+        <div class="container">
+            <div class="header-text">
+                <h1>Welcome to <span> String Harbour</span><br>and we have a collection <br> of amazing songs<br></h1>
+                <span id="element"></span>
+            </div>
+            <div>
+                <a class="btn-tocontact" onclick="SubmitEvent" href="#services">Get Started</a>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <!--------------services-->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title" style="font-weight: 500;"><center>CATEGORIES</center></h1><br><hr>
+            <div class="services-list">
+                <a onclick="SubmitEvent"  href="#evergreen" style="background: url(images/evergreen.jpeg); background-size: cover;">
+                    <h2><br><br></h2>
+                </a>
+
+                <a onclick="SubmitEvent" href="#bollywood" style="background:url(images/bollywood.jpeg); background-size: cover;">
+                    <h2><br><br></h2>
+                </a>
+
+                <a onclick="SubmitEvent"  href="#English-songs" style="background: url(images/hollywood.jpeg); background-size: cover;">
+                    <h2></i><br><br></h2>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+
+<!-------------------Old Evergreen Songs------------------------------>
+
+
+<!-------------------Bollywood Hits------------------------------>
+
+<div class="evergreen" id="bollywood">
+    <div class="container">
+        <div>
+            <center><h1 style="margin-bottom: 40px;">Latest Bollywood Song Chords</h1></center><hr style="margin-bottom: 50px;">
+            <ul style="margin-left: 100px;">
+                <li><a href="Lo safar.html">Lo Safar - Baaghi 2</a></li>
+                <li><a href="#">Tu jo Mila -Bhajarangi Bhaijaan</a></li>
+                <li><a href="#">Tum Hi Ho</a></li>
+                <li><a href="#">Sun raha hai na Tu</a></li>
+                <li><a href="#">Kabira Encore</a></li>
+                <li><a href="#">Kesariya</a></li>
+                <li><a href="#">Pani Da rang</a></li>
+                <li><a href="#">Coming soon.....</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+<!-------------------english Songs------------------------------>
+
+<div class="evergreen" id="English-songs">
+    <div class="container">
+        <div>
+            <ol></ol>
+        </div>
+    </div>
+
+</div>
+<!------------------Contact-------------------->
+
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-paper-plane"></i><a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRlRZWfczdgqGWvTgPMmvDcCnqSJQdhgcRNmJSZNSlTQLNSSsvxmrlJZMVJDxKSVWVHXBGv" target="_blank">rahulbhat5122@gmail.com</a></p>
+                <p><i class="fa-solid fa-phone"></i>+91 9019721662</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/rxhul_bhxt/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/m-rahul-bhat/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100024819263426" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://github.com/Mrahulbhat?tab=repositories" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+               
+           
+    <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"> </i>  M. Rahul Bhat</p>
+    </div>
+</div>
+<!--------------Script------------------------>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname)
+        {
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        
+    </script>
+  
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js">
+
+  </script>
+  <script>
+    var typed = new Typed('#element', {
+        strings: ['Evergreen Bollywood Songs', 'Latest Bollywood Songs', 'English Hit Songs'],
+        typeSpeed: 35,
+        loop: true // Add this option to loop the animation
+    });
+    </script>
+
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+
+        function openmenu()
+        {
+            sidemenu.style.right="0";
+        }
+
+        function closemenu()
+        {
+            sidemenu.style.right="-200px";
+        }
+    </script>
+
+
+   
+</body>
+</html>
