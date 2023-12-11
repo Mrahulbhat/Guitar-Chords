@@ -279,12 +279,12 @@ body{
     .evergreen{
         height: 100vh;
         padding: 2%;
-        font-size: 18px;
+        font-size: 23px;
         line-height: 45px;
     }
     
     .evergreen li a{
-        font-size: 23px;
+        font-size: 30px;
         color: white;
     }
     
